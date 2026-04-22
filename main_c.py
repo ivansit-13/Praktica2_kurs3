@@ -29,6 +29,7 @@ while True:
     print("1 - сложение")
     print("2 - умножение")
     print("3 - деление")
+    print("5 - выход")
 
 
     action = int(input("Вы выбираете = "))
@@ -40,6 +41,8 @@ while True:
         fun_multiply()
     elif action == 3:
         fun_divide()
+    elif action == 5:
+        break
     else:
         print("Вы ввели не валидные данные")
         print("Дух машины растроен и покидает вас")
