@@ -14,6 +14,14 @@ def fun_divide():
     print(f"{a} / {b} = {a/b}")
 
 while True:
+print("Добро пожаловать в канкулятор Ивана Петровича!")
+
+def fun_multiply():
+    a = int(input("Введите первое число для умножения "))
+    b = int(input("Введите второе число для умножения "))
+    print(f"{a} * {b} = {a*b}")
+
+while True:
     print("Пожалуйста выберите действие написав цифру 0-3")
     print("0 - вычитание")
     print("1 - сложение")
@@ -27,7 +35,7 @@ while True:
     elif action == 1:
         pass
     elif action == 2:
-        pass
+        fun_multiply()
     elif action == 3:
         fun_divide()
     else:
