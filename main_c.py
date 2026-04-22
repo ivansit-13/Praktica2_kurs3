@@ -5,6 +5,13 @@ def fun_minus():
     b = int(input("Введите второе число, что будет вычитать "))
     print(f"{a} - {b} = {a-b}")
 
+def fun_divide():
+    a = int(input("Введите натуральное число на которое будутт делить "))
+    if a == 0:
+        print("НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ!")
+        fun_divide()
+    b = int(input("Введите число что будет делить "))
+    print(f"{a} / {b} = {a/b}")
 
 while True:
     print("Пожалуйста выберите действие написав цифру 0-3")
@@ -22,7 +29,7 @@ while True:
     elif action == 2:
         pass
     elif action == 3:
-        pass
+        fun_divide()
     else:
         print("Вы ввели не валидные данные")
         print("Дух машины растроен и покидает вас")
